@@ -10,7 +10,7 @@ pipeline {
                 sh 'mvn -Dmaven.test.failure.ignore=true clean compile'
             }
             }
-        }
+
         stage('Test') {
             steps {
                 echo 'Testing..'
